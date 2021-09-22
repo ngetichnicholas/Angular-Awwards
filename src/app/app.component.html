@@ -1,2 +1,24 @@
-
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <div class="row" *ngFor="let project of listprojects">
+        <div class="col-md-3 col-sm-4 project" >
+          <div class="open-project">
+            <a href=""><img src="{{project.project_image}}" alt=""
+                class="img-thumbnail project-img"></a>
+          </div>
+          <div class="details">
+            <div class="row">
+              <div class="col-md-7">
+                <p class="title">{{project.title}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
 <router-outlet></router-outlet>
