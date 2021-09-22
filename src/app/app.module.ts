@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './services/api.service';
+import { Projects } from './classess/projects';
+
 
 @NgModule({
   declarations: [

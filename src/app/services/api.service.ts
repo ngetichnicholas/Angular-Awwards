@@ -6,7 +6,7 @@ import { HttpClient } from "@angular/common/http";
 export class ApiService {
     constructor(private httpclient:HttpClient) {}
     getprojects():Observable<any> {
-        return this.httpclient.get("https://nick-awwards.herokuapp.com/api/projects")
+        return this.httpclient.get("https://nick-awwards.herokuapp.com/api/projects/")
 
     }
 
