@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { ApiService } from './services/api.service';
-import { Projects } from './classess/projects';
+import { Heroes } from './classess/heroes';
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,8 @@ import { Projects } from './classess/projects';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular-Awwards';
-  listprojects:Projects[];
+  title = 'Heroes';
+  listheros:Heroes[];
 
   constructor(private apiService:ApiService) {
 
@@ -21,7 +21,7 @@ export class AppComponent {
     (
       data=>
       {
-         this.listprojects = data;
+         this.listheros = data;
       }
 
     );

@@ -1,23 +1,13 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-1"></div>
-    <div class="col-md-10">    
-      <h2>Projects</h2>
+    <div class="col-md-10">
+      <h2>Heroes</h2>
       <div class="row">
-        <div *ngFor='let project of listprojects'>
-          <div class="col-md-3 col-sm-4 project" >
-            <div class="open-project">
-              <a href=""><img src="https://res.cloudinary.com/dbos9xidr/{{project.project_image}}" alt=""
-                  class="img-thumbnail project-img"></a>
-              <p>{{project.technologies_used}}</p>
-            </div>
-            <div class="details">
-              <div class="row">
-                <div class="col-md-7">
-                  <p class="title">{{project.title}}</p>
-                </div>
-              </div>
-            </div>
+        <div *ngFor='let hero of listheros'>
+          <div class="">
+            <p>{{hero.known_as}}</p>
+            <p>{{hero.real_name}}</p>
           </div>
         </div>
       </div>
